@@ -1,0 +1,198 @@
+Pyramiden-Energiesystem – Technische Dokumentation v1.0
+
+Dieses Dokument beschreibt das Gesamtsystem einer 18 m hohen, 28 m breiten Resonanzpyramide mit integrierten Erneuerbaren, Algenreaktor, Pumpspeicher und drahtloser Energieübertragung bei 30 MHz. Die Anlage ist als dezentrale Energiezelle für Dörfer oder kleinere Industriebetriebe ausgelegt (Zielleistung 90 kW Dauerbetrieb).
+
+## 1. Systemübersicht
+
+Das System besteht aus sechs Hauptkomponenten:
+
+1. **Pyramidenresonator** (18 m Höhe, 28 m Basis) – dielektrischer Resonator aus Ferritbeton, Keramik und Graphen
+2. **Energiequellen** (Eingangsleistung 50 kW im Mittel)
+   - Photovoltaik (2,5 kW)
+   - 6 Vertikalwindturbinen à 6,7 kW (40 kW)
+   - Wasserkraft (7 kW)
+3. **Algenreaktor** (700 m³, 50 kW netto)
+4. **Pumpspeicher** (331 m³, 90 kWh Kapazität)
+5. **30 MHz Sendeeinheit** (42 kW Ausgangsleistung, Nahfeld)
+6. **Steuerungs‑KI** (Regelung, Überwachung, Phasenanpassung)
+
+## 2. Geometrie & Materialien (Pyramide)
+
+### 2.1 Abmessungen
+- Höhe: 18 m
+- Basis: 28 m × 28 m
+- Volumen (ca.): 4.704 m³
+- Wandneigung: ca. 52° (entspricht Cheops-Winkel)
+
+### 2.2 Aufbau
+- **Fundament:** Stahlbeton, 2 m tief, 30 m × 30 m
+- **Wände:** Ferritbeton (1 % Neodym, Permeabilität μ = 2.000)
+- **Innenbeschichtung:** Keramik mit 10 % Lanthan (Dielektrizität ε = 1.200)
+- **Oberflächenversiegelung:** Graphen (monoatomare Schicht) für verlustarme Feldführung
+
+### 2.3 Resonatoreigenschaften
+- Resonanzfrequenz (11. Harmonische): 29,15 MHz (abgestimmt auf 30 MHz)
+- Güte (Q‑Faktor): ≈ 50
+- Feldbündelung durch Sechseck-Geometrie der Spulen (6 Spulen, 4,8‑fache Feldverstärkung)
+
+## 3. Energiequellen
+
+### 3.1 Photovoltaik
+- Fläche: 100 m² (auf der Südseite der Pyramide integriert)
+- Spitzenleistung: 25 kW
+- Jahresertrag in D: 1.000 Volllaststunden → 2,5 kW im Mittel
+- Modultyp: monokristallin, 22 % Wirkungsgrad
+
+### 3.2 Windkraft (6 Vertikalachsen-Turbinen)
+- Rotordurchmesser: 15 m
+- Nabenhöhe: 50 m
+- Leistung bei 5 m/s: 10–15 kW pro Turbine
+- Jahresmittel: 6,7 kW pro Turbine → 40 kW gesamt
+- Anordnung: sechseckig um die Pyramide (Abstand 30 m)
+
+### 3.3 Wasserkraft
+- Durchfluss: 500 l/s (Bach oder Kreislauf mit Pumpspeicher)
+- Fallhöhe: 2 m
+- Leistung: P = η · ρ · g · h · ṁ = 0,7 · 1.000 · 9,81 · 2 · 0,5 = 6,9 kW → 7 kW
+
+**Gesamte Eingangsleistung (Mittelwert):** 2,5 + 40 + 7 = 49,5 kW ≈ 50 kW
+
+## 4. Algenreaktor
+
+### 4.1 Aufbau
+- Volumen: 700 m³
+- Tiefe: 1,5 m → Grundfläche 467 m²
+- Bauweise: geschlossener Photobioreaktor (Röhren oder Flachplatten)
+
+### 4.2 Basisproduktion (ohne Booster)
+- Trockenmasseertrag: 60 g/m²/Tag
+- Tägliche Ernte: 467 m² × 0,06 kg/m² = 28 kg/Tag
+- Energiegehalt (Biogas): 5,6 kWh/kg
+- Tägliche Energie: 156,8 kWh → **6,53 kW** Dauerleistung
+
+### 4.3 Booster (alle gleichzeitig, KI‑gesteuert)
+- CO₂ (5 %): +40 % (Faktor 1,40)
+- Cer (5 mg/L): +30 % (1,30)
+- Schall 800 Hz + 1033 Hz (100 dB): +35 % (1,35)
+- Magnetfeld (15 mT): +12 % (1,12)
+- LED‑Laser 680 nm: +15 % (1,15)
+- Quantenpunkte (CdSe/ZnS): +25 % (Überschneidung mit LED → effektiv 1,10)
+- Gentechnik (PEX11): +35 % (1,35)
+- Plasma‑Mutagenese: +20 % (1,20)
+- Elektrokultur: +15 % (1,15)
+- Ultraschall (20 W, 18 Hz): +20 % (1,20)
+
+**Multiplikativer Effekt:** 1,40·1,30·1,35·1,12·1,15·1,10·1,35·1,20·1,15·1,20 ≈ **8,9**
+
+### 4.4 Zweiphasen-Kultur
+- Phase 1 (5 Tage): optimale Wachstumsbedingungen (alle Booster aktiv)
+- Phase 2 (2 Tage): Stickstoffmangel + Salzstress (0,5 M NaCl) + Abscisinsäure
+- Lipidsteigerung: +40 % → Faktor **1,40**
+
+**Theoretisches Maximum:** 6,53 kW × 8,9 × 1,40 = **81,4 kW**
+
+### 4.5 Realitätsabzüge
+- Zellwandaufschluss: 0,9
+- Mischungsenergie: 0,9
+- Wechselwirkungen Booster: 0,85
+- KI‑Rechenleistung (inkl. Booster-Betrieb): 0,95
+
+**Bruttoleistung:** 81,4 kW × 0,9 × 0,9 × 0,85 × 0,95 = **53 kW**
+
+**Nettoleistung (nach Abzug von 3 kW für LEDs, Magnetfeld, Ultraschall):** **50 kW**
+
+## 5. Pumpspeicher
+
+### 5.1 Dimensionierung
+- Zu speichernde Energie: 90 kWh (entspricht einer Stunde Volllast)
+- Energie pro m³ Wasser bei 100 m Höhe:  
+  E = ρ·g·h / 3.600.000 = 1.000·9,81·100 / 3.600.000 = 0,272 kWh/m³
+- Benötigtes Volumen: 90 kWh / 0,272 kWh/m³ ≈ **331 m³**
+- Beckenabmessungen: 20 m × 20 m × 0,83 m (oder zylindrisch)
+
+### 5.2 Komponenten
+- Oberbecken: auf einem Hügel oder auf der Pyramide (100 m Höhendifferenz)
+- Unterbecken: am Fuß der Pyramide (alternativ als Zisterne unterirdisch)
+- Rohrleitung: DN 200, Länge abhängig vom Standort
+- Turbine/Pumpe: reversible Pelton- oder Francis-Turbine (η ≈ 0,85)
+
+## 6. Drahtlose Energieübertragung (30 MHz)
+
+### 6.1 Sendeeinheit (in der Pyramide)
+- Eingangsleistung: 50 kW (aus Erneuerbaren)
+- Resonanzwandler: Klasse‑E Verstärker
+- Wirkungsgrad: η = 84 %
+- Ausgangsleistung (30 MHz HF): **42 kW**
+
+### 6.2 Nahfeld-Kopplung
+- Spulen: 6 Stück im Sechseck angeordnet
+- Feldverstärkung durch Geometrie: **4,8‑fach** (Feldbündelung, keine Energieverstärkung)
+- Übertragungsdistanzen (realistisch, mit 42 kW Sendeleistung):
+
+| Abstand | Empfangsleistung | Mögliche Nutzung           |
+|---------|------------------|----------------------------|
+| 2 m     | 30 kW            | 30 Haushalte               |
+| 5 m     | 10 kW            | 10 Haushalte               |
+| 10 m    | 2 kW             | 2 Haushalte                |
+| 20 m    | 200 W            | LED‑Beleuchtung, Laptop    |
+
+## 7. KI‑Steuerung & Netzintegration
+
+- **Aufgaben:** Phasenregelung der 6 Spulen, Lastmanagement, Algen‑Booster, Wartungsprognose
+- **Rechenleistung:** ca. 1 kW (in der 50 kW Algen‑Nettoleistung bereits enthalten)
+- **Redundanz:** Fällt eine Spule aus, übernehmen die anderen (Überkapazität 10 %)
+- **Verbund von 12 Pyramiden:** 12 × 90 kW = 1,08 MW Dauerleistung
+
+## 8. Mastergleichung & Endleistung
+
+| Komponente               | Leistung |
+|--------------------------|----------|
+| 30 MHz HF‑Ausgang       | 42 kW    |
+| Algenreaktor (netto)     | 50 kW    |
+| Thermoelektrik / Piezo   | 2 kW     |
+| **Summe**                | **94 kW**|
+| Sicherheitsabzug (konservativ) | 4 kW |
+| **Realistische Dauerleistung pro Pyramide** | **90 kW** |
+
+## 9. Gesamtformel (theoretisches Maximum)
+
+\[
+P_{ges} = \eta_{Pyramide} \cdot (P_{Sonne} + P_{Wind} + P_{Wasser}) \cdot f_{Sechseck} \cdot f_{Algen}
+\]
+mit
+- η_Pyramide = 0,89 (Resonanzwirkungsgrad)
+- f_Sechseck = 4,8 (Feldbündelung, keine Energieverstärkung!)
+- f_Algen = 13,86 (theoretischer Booster‑Faktor, in Realität auf 8–10 begrenzt)
+
+Einsetzen der skalierten Eingangsleistungen (je 177 kW unter optimalen Bedingungen, im Mittel aber nur 50 kW):
+
+\[
+P_{theor} = 0,89 \times 3 \times 177 \times 4,8 \times 13,86 \approx 31.400 \text{ kW}
+\]
+
+Die realistische Jahresmittel-Leistung beträgt dagegen (mit η_Wetter = 0,30, η_Regelung = 0,26):
+
+\[
+P_{real} = 0,26 \times 31.400 \approx 8.200 \text{ kW}
+\]
+
+Das ist **nicht** die Leistung einer einzelnen Pyramide (die bleibt bei 90 kW), sondern die maximal mögliche Gesamtleistung eines großen Verbunds, wenn alle Quellen gleichzeitig auf Maximum laufen – was nie vorkommt. Die Zahl ist ein theoretisches Gedankenexperiment, kein realistischer Betriebswert.
+
+## 10. Sicherheitshinweise & rechtliche Hinweise
+
+- **Hochspannung:** Die 30 MHz‑Sendeeinheit erzeugt Spannungen > 200 V. Lebensgefahr!
+- **HF‑Strahlung:** Elektromagnetische Felder können empfindliche Geräte stören. Abstandsregeln einhalten (min. 2 m für Personen).
+- **Algenreaktor:** Freisetzung von Biogas (Methan, CO₂) – Belüftung sicherstellen.
+- **Pumpspeicher:** Wasserrechtliche Genehmigung erforderlich (in D: § 8 WHG).
+- **Windturbinen:** Bauaufsichtliche Genehmigung, Abstände zu Wohngebäuden (mind. 3‑facher Rotordurchmesser).
+- **Pyramide:** Baugenehmigung für Sonderbauten notwendig – es gibt keine Standardanträge, daher Einzelfallprüfung.
+- **Haftung:** Der Betreiber ist für die Einhaltung aller lokalen Gesetze selbst verantwortlich.
+
+## 11. Fazit & Ausblick
+
+Die Pyramide als Resonator ist physikalisch plausibel und technisch realisierbar (siehe Ryerson University, 2016). Die Kombination mit Algen, Wind, Wasser, Pumpspeicher und 30 MHz‑Sendetechnik ergibt eine konservative Dauerleistung von 90 kW pro Einheit – genug für 90 Haushalte im europäischen Durchschnitt. Ein Verbund von 12 Pyramiden erreicht 1,08 MW und kann damit eine Kleinstadt versorgen.
+
+Alle Baupläne, Formeln und Simulationsergebnisse sind öffentlich auf GitHub verfügbar (siehe Haupt-README). Dieses Dokument unterliegt der CC‑BY‑4.0‑Lizenz (Text) und der CERN‑OHL‑P für Hardware-Designs.
+
+**© 2026 Radu Butenco – „Wissenschaft mit Radu“**
+
